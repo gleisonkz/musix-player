@@ -1,0 +1,65 @@
+{
+  "title": "Demo Musix",
+  "artist": "Musix Player",
+  "bpm": 120,
+  "timeSignature": "4/4",
+  "key": "C",
+  "tracks": [
+    {
+      "name": "Click",
+      "file": "click.m4a",
+      "role": "click"
+    },
+    {
+      "name": "Guia",
+      "file": "guide.m4a",
+      "role": "guide"
+    },
+    {
+      "name": "Bateria",
+      "file": "drums.m4a",
+      "role": "band"
+    },
+    {
+      "name": "Baixo",
+      "file": "bass.m4a",
+      "role": "band"
+    },
+    {
+      "name": "Pad",
+      "file": "pad.m4a",
+      "role": "band"
+    },
+    {
+      "name": "Teclado",
+      "file": "keys.m4a",
+      "role": "band"
+    }
+  ],
+  "markers": [
+    {
+      "name": "Intro",
+      "time": 2.0
+    },
+    {
+      "name": "Verso",
+      "time": 10.0
+    },
+    {
+      "name": "Refrão",
+      "time": 26.0
+    },
+    {
+      "name": "Ponte",
+      "time": 42.0
+    },
+    {
+      "name": "Refrão",
+      "time": 50.0
+    },
+    {
+      "name": "Final",
+      "time": 66.0
+    }
+  ]
+}

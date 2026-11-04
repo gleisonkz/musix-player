@@ -1,0 +1,11 @@
+.build/
+.swiftpm/
+.agent/
+build/
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+*.ipa
+tools/tts/
+__pycache__/
+.DS_Store
