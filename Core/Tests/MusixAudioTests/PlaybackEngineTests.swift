@@ -75,6 +75,8 @@ import Testing
         mixer.toggleMute(at: 1)
         engine.apply(mixer: mixer)
         try engine.play(from: 0)
+        // volume changes are ramped by AVAudioMixer (de-zipper, avoids clicks); measure after the ramp
+        _ = try render(engine, frames: 8192)
         let clickOnly = try render(engine, frames: 8192)
         #expect(level(clickOnly.l) > 0.1)
         #expect(level(clickOnly.r) < 0.001)
@@ -82,6 +84,7 @@ import Testing
         mixer.toggleMute(at: 1)
         mixer.toggleMute(at: 0)
         engine.apply(mixer: mixer)
+        _ = try render(engine, frames: 8192)
         let bandOnly = try render(engine, frames: 8192)
         #expect(level(bandOnly.l) < 0.001)
         #expect(level(bandOnly.r) > 0.1)

@@ -9,3 +9,4 @@ DerivedData/
 tools/tts/
 __pycache__/
 .DS_Store
+App/Info.plist
